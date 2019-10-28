@@ -1,0 +1,37 @@
+.funs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 23px 45px;
+}
+
+.funs__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.funs__more {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+@media (max-width: 930px) {
+  .funs {
+    padding: 14px 11px 34px;
+  }
+}

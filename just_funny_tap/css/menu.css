@@ -1,0 +1,57 @@
+.menu {
+  display: flex;
+}
+
+.menu__login {
+  position: relative;
+
+  margin-left: 25px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu__login::after {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: 60px;
+
+  width: 25px;
+  height: 25px;
+
+
+  background: url('../img/log-in-icon.png');
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+    padding-right: 25px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu--opened {
+    display: flex;
+  }
+
+  .menu__login {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .menu {
+    padding-right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+}
