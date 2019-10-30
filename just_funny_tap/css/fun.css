@@ -1,6 +1,6 @@
 .fun {
   width: 48.5%;
-  padding: 30px 20px;
+  padding: 27px 20px;
   margin-bottom: 30px;
   box-sizing: border-box;
 
@@ -8,6 +8,10 @@
   border: 1px solid rgba(228, 228, 228, 0.96);
   border-radius: 4px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.inner-page .fun {
+  width: 100%;
 }
 
 .fun__header {
@@ -52,7 +56,7 @@
   margin-right: 20px;
 }
 
-.fun__button {
+.fun__rate-btn {
   width: 31px;
   height: 31px;
   box-sizing: border-box;
@@ -64,12 +68,12 @@
   cursor: pointer;
 }
 
-.fun__button--up {
+.fun__rate-btn--up {
   background: #71DF4A;
   border: 1px solid #71DF4A;
 }
 
-.fun__button--down {
+.fun__rate-btn--down {
   background: #F45050;
   border: 1px solid #F45050;
 }

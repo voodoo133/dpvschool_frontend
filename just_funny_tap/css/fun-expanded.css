@@ -1,0 +1,146 @@
+.fun-expanded {
+  margin-bottom: 40px;
+}
+
+.fun-expanded__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.fun-expanded__header-text {
+  margin: 0;
+  padding: 0;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.fun-expanded__header-date {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.fun-expanded__content {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.fun-expanded__img {
+  width: 50%;
+  padding-right: 13px;
+  box-sizing: border-box;
+}
+
+.fun-expanded__pic {
+  width: 100%;
+}
+
+.fun-expanded__description {
+  width: 50%;
+  padding-left: 13px;
+  box-sizing: border-box;
+}
+
+.fun-expanded__description-item {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.fun-expanded__description-item:first-of-type {
+  margin-top: 0;
+}
+
+.fun-expanded__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fun-expanded__actions {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 21px 0 8px;
+  box-sizing: border-box;
+}
+
+.fun-expanded__rate {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.fun-expanded__rate-btn {
+  width: 31px;
+  height: 31px;
+  box-sizing: border-box;
+
+  color: #fff;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.fun-expanded__rate-btn--up {
+  background: #71DF4A;
+  border: 1px solid #71DF4A;
+}
+
+.fun-expanded__rate-btn--down {
+  background: #F45050;
+  border: 1px solid #F45050;
+}
+
+.fun-expanded__rating {
+  margin: 0 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.fun-expanded__subscribe {
+  padding: 7px 14px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+
+  background: #020406;
+  border: none;
+  border-radius: 6px;
+}
+
+.fun-expanded__author {
+  width: 50%;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: right;
+}

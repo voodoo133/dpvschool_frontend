@@ -1,5 +1,7 @@
 .content {
   flex: 1 0 auto;
+}
 
+.index-page .content {
   background: #F5F5F5;
 }

@@ -12,6 +12,12 @@ body {
   margin: 0 auto;
 }
 
+.inner-page .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 42px 61px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 100%;

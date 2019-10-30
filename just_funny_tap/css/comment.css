@@ -1,0 +1,55 @@
+.comment {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 14px 7px 14px 0;
+}
+
+.comment__author {
+  margin: 0 auto 14px 0;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.comment__date {
+  margin: 0 0 0 auto;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.comment__text {
+  width: 100%;
+  margin-bottom: 7px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.comment__reply {
+  padding-right: 0;
+  margin-left: auto;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  background-color: transparent;
+  border: none;
+}
