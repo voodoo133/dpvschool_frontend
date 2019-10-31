@@ -51,6 +51,8 @@
   background: #020406;
   border: none;
   border-radius: 6px;
+
+  cursor: pointer;
 }
 
 .comments__header {
@@ -88,6 +90,8 @@
 
   background-color: transparent;
   border: none;
+
+  cursor: pointer;
 }
 
 .comments__sort-button::after {

@@ -131,6 +131,8 @@
   background: #020406;
   border: none;
   border-radius: 6px;
+
+  cursor: pointer;
 }
 
 .fun-expanded__author {
