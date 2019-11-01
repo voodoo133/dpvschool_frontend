@@ -15,6 +15,12 @@
   margin-right: 0;
 }
 
+.nav__item:hover {
+  font-weight: bold;
+
+  border-bottom: 2px solid #000000;
+}
+
 .nav__item--active {
   font-weight: bold;
 

@@ -40,6 +40,7 @@
 }
 
 .comment__reply {
+  padding-left: 0;
   padding-right: 0;
   margin-left: auto;
 
@@ -54,4 +55,8 @@
   border: none;
 
   cursor: pointer;
+}
+
+.comment__reply:hover {
+  animation: move 0.5s;
 }

@@ -101,9 +101,19 @@
   border: 1px solid #71DF4A;
 }
 
+.fun-expanded__rate-btn--up:hover {
+  background: #5bbd38;
+  border: 1px solid #5bbd38;
+}
+
 .fun-expanded__rate-btn--down {
   background: #F45050;
   border: 1px solid #F45050;
+}
+
+.fun-expanded__rate-btn--down:hover {
+  background: #e23333;
+  border: 1px solid #e23333;
 }
 
 .fun-expanded__rating {
@@ -135,6 +145,10 @@
   cursor: pointer;
 }
 
+.fun-expanded__subscribe:hover {
+  animation: move 0.5s;
+}
+
 .fun-expanded__author {
   width: 50%;
 
@@ -145,4 +159,19 @@
   line-height: 17px;
   color: #000000;
   text-align: right;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

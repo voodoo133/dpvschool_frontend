@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.funs__more:hover {
+  color: rgba(0, 0, 0, .6);
+}
+
 @media (max-width: 930px) {
   .funs {
     padding: 14px 11px 34px;

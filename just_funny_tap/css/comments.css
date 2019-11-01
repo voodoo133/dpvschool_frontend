@@ -55,6 +55,10 @@
   cursor: pointer;
 }
 
+.comments__form-submit:hover {
+  animation: move 0.5s;
+}
+
 .comments__header {
   display: flex;
   justify-content: space-between;
@@ -109,6 +113,10 @@
 
 .comments__sort-button--desc::after {
   background-image: url('../img/sort-button--desc.png');
+}
+
+.comments__sort-button:hover {
+  font-weight: 400;
 }
 
 .comments__list {

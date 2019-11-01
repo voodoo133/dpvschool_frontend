@@ -73,9 +73,19 @@
   border: 1px solid #71DF4A;
 }
 
+.fun__rate-btn--up:hover {
+  background: #5bbd38;
+  border: 1px solid #5bbd38;
+}
+
 .fun__rate-btn--down {
   background: #F45050;
   border: 1px solid #F45050;
+}
+
+.fun__rate-btn--down:hover {
+  background: #e23333;
+  border: 1px solid #e23333;
 }
 
 .fun__rating {
@@ -118,14 +128,23 @@
 }
 
 .fun__play {
-  width: 25px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   margin-left: auto;
 
   border: none;
-  background: url('../img/play.png') 5px 3px no-repeat;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url('../img/play.svg');
+  background-position: 15px 9px;
+  background-repeat: no-repeat;
 
   cursor: pointer;
+}
+
+.fun__play:hover {
+  background-color: #C2C2C2;
+  background-image: url('../img/play-hover.svg');
 }
 
 @media (max-width: 900px) {
