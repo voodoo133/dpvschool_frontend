@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "content.css": "^3.2.0",
+    "main.css": "^2.0.0",
+    "nav.css": "^1.0.0"
+  }
+}
