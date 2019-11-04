@@ -25,7 +25,8 @@ gulp.task("clean-build", function () {
 gulp.task("copy-files", function () {
   return gulp.src([
       "src/img/**",
-      "src/*.html"
+      "src/*.html",
+      "src/*.json"
     ], {
       base: "src"
     })
@@ -71,7 +72,7 @@ gulp.task("run-server", function () {
   });
 
   gulp.watch("src/sass/*.scss", gulp.series("make-css"));
-  gulp.watch("src/*.html", gulp.series("copy-files", "refresh-server"));
+  gulp.watch([ "src/*.html", "src/*.json" ], gulp.series("copy-files", "refresh-server"));
   gulp.watch("src/js/*.js", gulp.series("minify-js", "refresh-server"));
 });
 

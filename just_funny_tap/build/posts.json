@@ -1,0 +1,30 @@
+[
+  {
+    "title": "When my cat wants to sit",
+    "imgUrl": "img/cat.png",
+    "author": "John Doe",
+    "rating": "150",
+    "comments": "15"
+  },
+  {
+    "title": "When my cat wants to sit 2",
+    "imgUrl": "img/cat.png",
+    "author": "Ivan Ivanov",
+    "rating": "149",
+    "comments": "16"
+  },
+  {
+    "title": "When my cat wants to sit 3 ",
+    "imgUrl": "img/cat.png",
+    "author": "Petr Petrov",
+    "rating": "148",
+    "comments": "17"
+  },
+  {
+    "title": "When my cat wants to sit 4",
+    "imgUrl": "img/cat.png",
+    "author": "Anton Antonov",
+    "rating": "147",
+    "comments": "18"
+  }
+]

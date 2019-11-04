@@ -1,0 +1,7 @@
+.vscode  
+/*/bin
+/*/obj
+/tasks/tasks.json
+/*/node_modules
+/*/.cache
+/*/dist

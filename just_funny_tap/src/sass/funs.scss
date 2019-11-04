@@ -5,6 +5,29 @@
   padding: 23px 45px;
 }
 
+.funs__processing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 230px;
+
+  &--hide {
+    display: none;
+  }
+}
+
+.funs__processing-text {
+  margin-top: 10px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-size: 45px;
+
+  animation: blink 0.7s infinite alternate;
+}
+
 .funs__header {
   width: 100%;
   margin: 14px 8px 17px;
@@ -28,6 +51,16 @@
   list-style-type: none;
 }
 
+.funs__error {
+  width: 100%;
+
+  font-family: Lato;
+  font-style: normal;
+  font-size: 45px;
+  text-align: center;
+  color: red;
+}
+
 .funs__more {
   font-family: Lato;
   font-style: normal;
@@ -44,6 +77,10 @@
 
   &:hover {
     color: rgba(0, 0, 0, .6);
+  }
+
+  &--hide {
+    display: none;
   }
 }
 
