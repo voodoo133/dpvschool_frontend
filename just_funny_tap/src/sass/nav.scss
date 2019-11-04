@@ -9,22 +9,18 @@
 .nav__item {
   margin-right: 25px;
   padding-bottom: 3px;
-}
 
-.nav__item:last-of-child {
-  margin-right: 0;
-}
+  &:hover {
+    font-weight: bold;
 
-.nav__item:hover {
-  font-weight: bold;
+    border-bottom: 2px solid #000000;
+  }
 
-  border-bottom: 2px solid #000000;
-}
+  &--active {
+    font-weight: bold;
 
-.nav__item--active {
-  font-weight: bold;
-
-  border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+  }
 }
 
 .nav__link {
@@ -38,13 +34,13 @@
   color: #000000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: $tablet-width) {
   .nav {
     justify-content: center;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: $mobile-width) {
   .nav {
     flex-direction: column;
   }

@@ -5,11 +5,6 @@
   padding: 23px 45px;
 }
 
-.inner-page .funs {
-  width: 42%;
-  padding: 0 0 0 86px;
-}
-
 .funs__header {
   width: 100%;
   margin: 14px 8px 17px;
@@ -33,10 +28,6 @@
   list-style-type: none;
 }
 
-.inner-page .funs__list {
-  flex-direction: column;
-}
-
 .funs__more {
   font-family: Lato;
   font-style: normal;
@@ -50,13 +41,13 @@
   background-color: transparent;
 
   cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, .6);
+  }
 }
 
-.funs__more:hover {
-  color: rgba(0, 0, 0, .6);
-}
-
-@media (max-width: 930px) {
+@media (max-width: $tablet-width) {
   .funs {
     padding: 14px 11px 34px;
   }

@@ -55,8 +55,8 @@
   border: none;
 
   cursor: pointer;
-}
 
-.comment__reply:hover {
-  animation: move 0.5s;
+  &:hover {
+    animation: move 0.5s;
+  }
 }

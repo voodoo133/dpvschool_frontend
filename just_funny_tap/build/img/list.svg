@@ -1,0 +1,12 @@
+<svg fill="none" height="30" viewbox="0 0 25 30" width="25" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="white" height="29" stroke="black" width="24" x="0.5" y="0.5">
+  </rect>
+  <line stroke="black" x1="5" x2="20" y1="8.18422" y2="8.18422">
+  </line>
+  <line stroke="black" x1="5" x2="20" y1="22.3947" y2="22.3947">
+  </line>
+  <line stroke="black" x1="5" x2="20" y1="17.6579" y2="17.6579">
+  </line>
+  <line stroke="black" x1="5" x2="20" y1="12.9211" y2="12.9211">
+  </line>
+</svg>

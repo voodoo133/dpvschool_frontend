@@ -53,10 +53,10 @@
   border-radius: 6px;
 
   cursor: pointer;
-}
 
-.comments__form-submit:hover {
-  animation: move 0.5s;
+  &:hover {
+    animation: move 0.5s;
+  }
 }
 
 .comments__header {
@@ -96,27 +96,27 @@
   border: none;
 
   cursor: pointer;
-}
 
-.comments__sort-button::after {
-  content: '';
+  &:hover {
+    font-weight: 400;
+  }
 
-  position: absolute;
-  top: 7px;
-  right: 5px;
+  &::after {
+    content: '';
 
-  width: 10px;
-  height: 8px;
+    position: absolute;
+    top: 7px;
+    right: 5px;
 
-  background-repeat: no-repeat;
-}
+    width: 10px;
+    height: 8px;
 
-.comments__sort-button--desc::after {
-  background-image: url('../img/sort-button--desc.png');
-}
+    background-repeat: no-repeat;
+  }
 
-.comments__sort-button:hover {
-  font-weight: 400;
+  &--desc::after {
+    background-image: url('../img/sort-button--desc.png');
+  }
 }
 
 .comments__list {

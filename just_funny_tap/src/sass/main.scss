@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.index-page .content {
+  background: #F5F5F5;
+}
+
+.inner-page {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 42px 61px;
+  }
+
+  .funs {
+    width: 42%;
+    padding: 0 0 0 86px;
+  }
+
+  .funs__list {
+    flex-direction: column;
+  }
+
+  .fun {
+    width: 100%;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .container {
+    width: 100%;
+  }
+}

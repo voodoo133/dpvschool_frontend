@@ -16,36 +16,36 @@
   text-transform: capitalize;
   text-decoration: none;
   color: #000000;
+
+  &:hover {
+    border-bottom: 2px solid #000000;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 1px;
+    left: 60px;
+
+    width: 25px;
+    height: 25px;
+
+
+    background: url('../img/log-in-icon.png') no-repeat;
+  }
 }
 
-.menu__login::after {
-  content: "";
-
-  position: absolute;
-  top: 1px;
-  left: 60px;
-
-  width: 25px;
-  height: 25px;
-
-
-  background: url('../img/log-in-icon.png') no-repeat;
-}
-
-.menu__login:hover {
-  border-bottom: 2px solid #000000;
-}
-
-@media (max-width: 900px) {
+@media (max-width: $tablet-width) {
   .menu {
     display: none;
     padding-right: 25px;
     width: 100%;
     justify-content: center;
-  }
 
-  .menu--opened {
-    display: flex;
+    &--opened {
+      display: flex;
+    }
   }
 
   .menu__login {
@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: $mobile-width) {
   .menu {
     padding-right: 0;
     flex-direction: column;
