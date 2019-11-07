@@ -116,8 +116,8 @@ for (let modalInput of modalContent.querySelectorAll('.modal__input')) {
   };  
 }
 
-if (location.pathname === '/' || location.pathname === '/index.html') {
-  const postsUrl = '/posts.json';
+if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')) {
+  const postsUrl = 'posts.json';
 
   fetch(postsUrl)
     .then(res => res.json())
