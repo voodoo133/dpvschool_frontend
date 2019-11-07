@@ -8,11 +8,12 @@ var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 
 /* Сжатие скриптов */
-var minify_js = require('gulp-minify');
+var uglify = require('gulp-uglify-es').default;
 
 /* Вспомогательные модули */
 var del = require("del");
 var rename = require("gulp-rename");
+var concat = require('gulp-concat');
 
 /* Основа */
 var gulp = require("gulp");
@@ -50,7 +51,10 @@ gulp.task("minify-js", function () {
   return gulp.src([
       "src/js/*.js", "!src/js/*.min.js"
     ])
-    .pipe(minify_js())
+    .pipe(plumber())
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
 });

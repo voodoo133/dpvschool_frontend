@@ -4,27 +4,31 @@
     "imgUrl": "img/cat.png",
     "author": "John Doe",
     "rating": "150",
-    "comments": "15"
+    "comments": "15",
+    "url": "page.html"
   },
   {
     "title": "When my cat wants to sit 2",
     "imgUrl": "img/cat.png",
     "author": "Ivan Ivanov",
     "rating": "149",
-    "comments": "16"
+    "comments": "16",
+    "url": "page.html"
   },
   {
     "title": "When my cat wants to sit 3 ",
     "imgUrl": "img/cat.png",
     "author": "Petr Petrov",
     "rating": "148",
-    "comments": "17"
+    "comments": "17",
+    "url": "page.html"
   },
   {
     "title": "When my cat wants to sit 4",
     "imgUrl": "img/cat.png",
     "author": "Anton Antonov",
     "rating": "147",
-    "comments": "18"
+    "comments": "18",
+    "url": "page.html"
   }
 ]
