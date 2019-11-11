@@ -1,3 +1,61 @@
+function formatDate(date, format) {
+  let result = '';
+
+  let day  = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let partOfDay = (hours >= 12) ? 'PM' : 'AM';
+
+  if (day < 10) day = "0" + day;
+  if (month < 10) month = "0" + month;
+
+  if (minutes < 10) minutes = "0" + minutes;
+
+  switch (format) {
+    case 'ISO': 
+      result = `${year}-${month}-${day}T${hours}:${minutes}`;
+      break;
+
+    case 'human':
+      if (hours > 12) hours = hours - 12;
+      
+      result = `${day}.${month}.${year} ${hours}:${minutes} ${partOfDay}`;
+
+      break;
+  }
+
+  return result;
+}
+
+function initRateHandler () {
+  const rateBlocks = document.querySelectorAll('.rate');
+
+  for (let rateBlock of rateBlocks) {
+    rateBlock.onclick = (e) => {
+      const target = e.target;
+
+      if (!target.classList.contains('rate__btn')) return;
+
+      const ratingBlock = rateBlock.querySelector('.rate__rating');
+      const ratingValue = parseInt(ratingBlock.textContent);
+      let ratingBlockTextContent = '';
+
+      if (target.classList.contains('rate__btn--up')) {
+        ratingBlockTextContent = ratingValue + 1;
+      } else if (target.classList.contains('rate__btn--down')) {
+        ratingBlockTextContent = ratingValue - 1;
+      }
+
+      if (rateBlock.classList.contains('fun-expanded__rate'))
+        ratingBlockTextContent += ' votes';
+
+      ratingBlock.textContent = ratingBlockTextContent;
+    };
+  }
+}
+
 const firebaseConfig = {
   apiKey: "AIzaSyAMD4YENydmYRDou7OGCAtPMlfVuxKlfzY",
   authDomain: "just-funny-tap.firebaseapp.com",
@@ -135,10 +193,10 @@ if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')
               <img class="fun__img" src="${post.imgUrl}" alt="fun_image" />
               <div class="fun__author">Fun: ${post.author}</div>
               <div class="fun__meta">
-                <div class="fun__rate">
-                  <button class="fun__rate-btn fun__rate-btn--up">▲</button>
-                  <span class="fun__rating">${post.rating}</span>
-                  <button class="fun__rate-btn fun__rate-btn--down">▼</button>
+                <div class="fun__rate rate">
+                  <button class="rate__btn rate__btn--up">▲</button>
+                  <span class="rate__rating">${post.rating}</span>
+                  <button class="rate__btn rate__btn--down">▼</button>
                 </div>
                 <div class="fun__comments">${post.comments}</div>
                 <a class="fun__play" href="${post.url}"></a>
@@ -153,6 +211,8 @@ if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')
 
       const funsMore = document.querySelector('.funs__more');
       funsMore.classList.remove('funs__more--hide');
+
+      initRateHandler();
     })
     .catch(error => {
       const funsProcessing = document.querySelector('.funs__processing');
@@ -166,4 +226,29 @@ if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')
    
       funsList.after(funsError);
     });
+} else if (location.pathname.endsWith('/page.html')) {
+  initRateHandler();
+
+  const commentsForm = document.querySelector('.comments__form');
+  commentsForm.onsubmit = (e) => {
+    e.preventDefault();
+
+    const commentText = commentsForm.querySelector('.comments__form-textarea').value.trim();
+    const currDate = new Date();
+    const commentsList = document.querySelector('.comments__list');
+
+    const commentHTML = `
+      <li class="comments__list-item comment">
+        <h4 class="comment__author">Anonymous says</h4>
+        <time class="comment__date" datetime="${formatDate(currDate, 'ISO')}">${formatDate(currDate, 'human')}</time>
+        <div class="comment__text">${commentText}</div>
+        <button class="comment__reply">✍️ Answer her</button>
+      </li>
+    `;
+
+    commentsList.insertAdjacentHTML('beforeEnd', commentHTML);
+  } 
 }
+
+
+

@@ -47,53 +47,7 @@
 }
 
 .fun__rate {
-  display: flex;
-  align-items: center;
   margin-right: 20px;
-}
-
-.fun__rate-btn {
-  width: 31px;
-  height: 31px;
-  box-sizing: border-box;
-
-  color: #fff;
-
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  &--up {
-    background: #71DF4A;
-    border: 1px solid #71DF4A;
-  }
-
-  &--up:hover {
-    background: #5bbd38;
-    border: 1px solid #5bbd38;
-  }
-
-  &--down {
-    background: #F45050;
-    border: 1px solid #F45050;
-  }
-
-  &--down:hover {
-    background: #e23333;
-    border: 1px solid #e23333;
-  }
-}
-
-.fun__rating {
-  margin: 0 10px;
-
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-transform: capitalize;
-  color: #000000;
 }
 
 .fun__comments {
